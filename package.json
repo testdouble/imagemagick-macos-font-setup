@@ -1,0 +1,10 @@
+{
+  "name": "imagemagick-macos-font-setup",
+  "version": "1.0.0",
+  "description": "Sets up user fonts for imagemagick on macOS",
+  "main": "index.js",
+  "bin": "bin/cli",
+  "repository": "https://github.com/testdouble/imagemagick-macos-font-setup",
+  "author": "Justin Searls <searls@gmail.com>",
+  "license": "GPL-3.0"
+}

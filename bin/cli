@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "<----- Ensuring $HOME/.config/ImageMagick exists"
+mkdir -p "$HOME/.config/ImageMagick"
+
+echo "<----- Downloading font generation script from http://www.imagemagick.org/Usage/scripts/imagick_type_gen"
+imagick_type_gen=$(curl http://www.imagemagick.org/Usage/scripts/imagick_type_gen)
+
+echo "<----- Writing font definition to $HOME/.config/ImageMagick/type.xml"
+find "$HOME/Library/Fonts" -type f -name '*.*' | perl -e "$imagick_type_gen" -- -f - > "$HOME/.config/ImageMagick/type.xml"
+
