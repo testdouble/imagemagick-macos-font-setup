@@ -10,6 +10,14 @@ This will explode if you haven't installed ImageMagick. First, do that with [Hom
 $ brew install imagemagick
 ```
 
+## Installation
+
+Just install it globally via npm to get the binary onto your path:
+
+```
+$ npm i -g imagemagick-macos-font-setup
+```
+
 ## Usage
 
 ### CLI
