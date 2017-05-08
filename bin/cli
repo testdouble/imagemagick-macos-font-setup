@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-TYPE_GEN_SCRIPT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../vendor/imagemagick_type_gen"
+echo "<----- imagemagick-macos-font-setup will update your ImageMagick font definitions"
+
+# Find our path via npm because BASH_SOURCE won't work under npm scripts… ಠ_ಠ
+DIR="$(npm ls --parseable imagemagick-macos-font-setup || npm ls --global --parseable imagemagick-macos-font-setup)"
+
+TYPE_GEN_SCRIPT="$DIR/vendor/imagemagick_type_gen"
 
 echo "<----- Ensuring $HOME/.config/ImageMagick exists"
 mkdir -p "$HOME/.config/ImageMagick"
