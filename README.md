@@ -28,7 +28,7 @@ From the command line, run:
 $ imagemagick-macos-font-setup
 ```
 
-Which will evaluate [this Perl script](http://www.imagemagick.org/Usage/scripts/imagick_type_gen) and overwrite your ImageMagick font definition in `~/.config/ImageMagick/type.xml`.
+Which will evaluate a tweaked fork of [this Perl script](http://www.imagemagick.org/Usage/scripts/imagick_type_gen) and overwrite your ImageMagick font definition in `~/.config/ImageMagick/type.xml`.
 
 ### API
 
